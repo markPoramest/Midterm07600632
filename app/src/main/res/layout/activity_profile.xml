@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyProfile">
+    tools:context=".Profile">
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/Lives"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:text="นครปฐม"
+        android:text="กรุงเทพมหานคร"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/From"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -33,11 +33,11 @@
         app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/School"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:text="กาญจนาภิเษกวิทยาลัย นครปฐม"
+        android:text="สวนกุหลาบวิทยาลัย"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -131,10 +131,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="w,397:600"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mycover" />
+        app:srcCompat="@drawable/cover" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -147,11 +146,10 @@
         android:adjustViewBounds="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.053"
-        app:srcCompat="@drawable/ic_myprofile" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_profile" />
 
     <TextView
         android:id="@+id/Promlert"
@@ -159,12 +157,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:layout_marginBottom="8dp"
-        android:text="Poramest Vichitnopawan"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.0" />
@@ -233,10 +231,10 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.033"
+        app:layout_constraintVertical_bias="0.031"
         app:srcCompat="@drawable/ic_study" />
 
     <TextView
@@ -250,4 +248,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView9"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

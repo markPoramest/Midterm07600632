@@ -26,14 +26,23 @@ public class MainActivity extends AppCompatActivity {
                 String pass = p1.getText().toString();
                 if (user.equals("aaa") && pass.equals("111"))
                 {
-                    Intent i1 = new Intent(getApplicationContext(),MyProfile.class);
+                    Intent i1 = new Intent(getApplicationContext(),Profile.class);
                     i1.putExtra("Welcome",getString(R.string.Welcome)+" "+getString(R.string.Poramest));
+                    i1.putExtra("Name",getString(R.string.Poramest));
+                    i1.putExtra("School","กาญจนาภิเษกวิทยาลัย นครปฐม");
+                    i1.putExtra("Lives","นครปฐม");
+                    i1.putExtra("From","กรุงเทพมหานคร");
+
                     startActivity(i1);
                 }
                 else if (user.equals("bbb") && pass.equals("222"))
                 {
-                    Intent i1 = new Intent(getApplicationContext(),Promlert.class);
+                    Intent i1 = new Intent(getApplicationContext(), Profile.class);
                     i1.putExtra("Welcome",getString(R.string.Welcome)+" "+getString(R.string.Promlert));
+                    i1.putExtra("Name",getString(R.string.Promlert));
+                    i1.putExtra("School","สวนกุหลาบวิทยาลัย");
+                    i1.putExtra("Lives","กรุงเทพมหานคร");
+                    i1.putExtra("From","กรุงเทพมหานคร");
                     startActivity(i1);
                 }
                 else
