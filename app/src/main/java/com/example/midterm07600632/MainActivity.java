@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     AlertDialog.Builder alert1 = new AlertDialog.Builder(MainActivity.this);
-                    alert1.setTitle("Invalid");
+                    //alert1.setTitle("Invalid");
                     alert1.setMessage(R.string.Invalid);
                     alert1.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
